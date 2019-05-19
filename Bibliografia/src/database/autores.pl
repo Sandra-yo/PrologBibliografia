@@ -18,6 +18,12 @@ libro(cancion_de_fuego).
 libro(cimmeria).
 libro(harry_potter).
 
+genero(terror).
+genero(ciencia_ficcion).
+genero(ficcion).
+genero(drama).
+genero(informativa).
+
 autorDe(antonio_malpica, adonde_no_conozco_nada).
 autorDe(antonio_malpica, ulises2300).
 autorDe(stephen_king,it).
@@ -50,10 +56,19 @@ editorialDe(the_bicentenal_man, ballantine_books).
 fechaPublicacion(adonde_no_conozco_nada,2011).
 fechaPublicacion(ulises2300,2003).
 fechaPublicacion(it,1986).
-fechaPublicacion(cancion_de_fuego, 11996).
+fechaPublicacion(cancion_de_fuego, 1996).
 fechaPublicacion(the_bicentenal_man, 1976).
 fechaPublicacion(the_hunger_games,2008).
 fechaPublicacion(sinsajo,2010).
 fechaPublicacion(harry_potter,1997).
 fechaPublicacion(salvese_quien_pueda, 2018).
 
+fecha(2011).
+fecha(2003).
+fecha(1986).
+fecha(1996).
+fecha(1976).
+fecha(2008).
+fecha(2010).
+fecha(1997).
+fecha(2018).

@@ -10,11 +10,6 @@ import view.Display;
 /**
  *
  * @author argel
- * 
- * 
- * 
- * 
-
  */
 public class Bibliografia {
 
@@ -26,4 +21,4 @@ public class Bibliografia {
         Display display = new Display();
     }
     
-}
+} 

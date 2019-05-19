@@ -138,43 +138,43 @@ public final class Display{
     protected void listeners(){
         //ok button listener
         searchTitles.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(false,"libro(X).");
         });
         
         searchGenders.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(false, "genero(X).");
         });
         
         searchEditorials.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(false,"editorial(X).");
         });
         
         searchWriters.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(false,"autor(X).");
         });
         
         searchYears.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(false,"fecha(X).");
         });
         
         searchByTitle.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(true,"libro(X).");
         });
         
         searchByGenders.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(true,"libro(X).");
         });
         
         searchByEditorials.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(true,"libro(X).");
         });
         
         searchByWriters.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(true,"libro(X).");
         });
         
         searchByYear.addActionListener((ActionEvent ae) -> {
-            System.out.println("click");
+            new TitlesSearch(true,"libro(X).");
         });
     }
     
