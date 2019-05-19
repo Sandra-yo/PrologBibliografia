@@ -139,6 +139,7 @@ public final class Display{
         //ok button listener
         searchTitles.addActionListener((ActionEvent ae) -> {
             new TitlesSearch(false,"libro(X).");
+            System.out.println("2");
         });
         
         searchGenders.addActionListener((ActionEvent ae) -> {
