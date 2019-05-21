@@ -21,7 +21,7 @@ public class ConsultaProlog {
         try{
            Query q = new Query("consult('src/database/autores.pl')");
             if(q.hasSolution()){
-                System.out.println("Conectando....");
+                System.out.println(busqueda);
                 //String personaje=JOptionPane.showInputDialog("Personaje:");
              Query q2 = new Query(busqueda);
              String answer="<html>";

@@ -25,4 +25,10 @@ public class Strings {
     public static final String MENU_EDITORIAL_BUTTON    = "Buscar por editorial";
     public static final String MENU_WRITER_BUTTON       = "Buscar por escritor";
     public static final String MENU_YEAR_BUTTON         = "Buscar por año";
+    public static final String OPTION_BY_TITLE          = "Indique el titulo a buscar";
+    public static final String OPTION_BY_GENDER         = "Indique el genero a buscar";
+    public static final String OPTION_BY_EDITORIAL      = "Indique la editorial a buscar";
+    public static final String OPTION_BY_WRITER         = "Indique el escritor a buscar";
+    public static final String OPTION_BY_YEARS          = "Indique el año a buscar";
+    
 }

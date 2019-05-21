@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPopupMenu;
 import resource.Strings;
 
@@ -135,10 +136,19 @@ public final class Display{
                 
     }
     
+    public String input(String texto){
+        
+        String stringInput = (String)JOptionPane.showInputDialog(null,texto,Strings.TITLE,-1);
+        
+        stringInput = stringInput.replace(' ', '_');
+        
+        return stringInput.toLowerCase();
+    }
+    
     protected void listeners(){
         //ok button listener
         searchTitles.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(false,"libro(X).");
+             new TitlesSearch(false,"libro(X).");
             System.out.println("2");
         });
         
@@ -159,24 +169,28 @@ public final class Display{
         });
         
         searchByTitle.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(true,"libro(X).");
+             
+            System.out.println("fechaPublicacion("+input(Strings.OPTION_BY_TITLE)+",X)");
+            //new TitlesSearch(false,"fechaPublicacion("+input(Strings.OPTION_BY_TITLE)+",X)");
+            
         });
         
         searchByGenders.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(true,"libro(X).");
+            new TitlesSearch(false,"libroGenero(X,"+input(Strings.OPTION_BY_GENDER)+").");
         });
         
         searchByEditorials.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(true,"libro(X).");
+            new TitlesSearch(false,"editorialDe(X,"+input(Strings.OPTION_BY_EDITORIAL)+").");
         });
         
         searchByWriters.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(true,"libro(X).");
-        });
+            new TitlesSearch(false,"autorDe("+input(Strings.OPTION_BY_WRITER)+",X).");
+            });
         
         searchByYear.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(true,"fechaPublicacion(A,X)");
-            System.out.println("año");
+            
+            new TitlesSearch(false,"fechaPublicacion(X,"+input(Strings.OPTION_BY_TITLE)+").");
+           // System.out.println("fechaPublicacion("+input(Strings.OPTION_BY_TITLE)+",X)");
         });
     }
     

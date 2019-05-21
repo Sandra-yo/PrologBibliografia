@@ -34,10 +34,10 @@ public class TitlesSearch {
         config();
         init();
         this.consulta = consulta;
-        System.out.println(busqueda+"¨*");
         this.busqueda = busqueda;
         screen.setVisible(true);
         screen.validate();
+        System.out.println(consulta +"---");
     }
     
     protected void config(){
@@ -67,12 +67,10 @@ public class TitlesSearch {
         searchButton.setBounds(290, 34, 100, 30);
         screen.add(type);
         screen.add(result);
-        if(busqueda){
-        screen.add(titleToSearch);
+     
+        //screen.add(titleToSearch);
         screen.add(search);
-        }else{
-            System.out.println(busqueda+"...");
-        }
+        
         screen.add(searchButton);
       
         listener();
@@ -86,7 +84,6 @@ public class TitlesSearch {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 result.setText(searchResponse());
-                System.out.println(searchResponse());
            }
         });
     }
