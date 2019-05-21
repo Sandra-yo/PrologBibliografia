@@ -27,6 +27,7 @@ public class ConsultaProlog {
              String answer="<html>";
                 while (q2.hasNext()) {
                     answer+=q2.nextSolution().get("X")+"<br>";
+                    
                 }
                 answer+="</html>";
                 return(answer);
