@@ -30,7 +30,7 @@ public class ConsultaProlog {
                     
                 }
                 answer+="</html>";
-                return(answer);
+                return(answer.replace('_', ' '));
             }else{
                 System.out.println("Imposible conectar");
                 return null;

@@ -127,7 +127,7 @@ public final class Display{
         screen.add(searchEditorials);
         screen.add(searchWriters);
         screen.add(searchYears);
-        screen.add(searchByTitle);
+        //screen.add(searchByTitle);
         screen.add(searchByGenders);
         screen.add(searchByEditorials);
         screen.add(searchByWriters);

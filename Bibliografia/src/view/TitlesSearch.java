@@ -48,7 +48,7 @@ public class TitlesSearch {
         screen.setLocationRelativeTo(null);
         screen.setLayout(null);
         screen.setResizable(false);
-        screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        screen.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         
      
     }
@@ -86,9 +86,6 @@ public class TitlesSearch {
                 result.setText(searchResponse());
            }
         });
-    }
-    public static void main(String[] args) {
-        //TitlesSearch n = new TitlesSearch("");
     }
     
     
