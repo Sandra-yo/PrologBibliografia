@@ -175,7 +175,8 @@ public final class Display{
         });
         
         searchByYear.addActionListener((ActionEvent ae) -> {
-            new TitlesSearch(true,"libro(X).");
+            new TitlesSearch(true,"fechaPublicacion(A,X)");
+            System.out.println("año");
         });
     }
     

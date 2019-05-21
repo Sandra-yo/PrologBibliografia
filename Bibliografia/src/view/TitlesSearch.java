@@ -28,12 +28,13 @@ public class TitlesSearch {
     private JTextField titleToSearch;
     private JButton searchButton;
     private String consulta;
-    private boolean busqueda;
+    private boolean busqueda=false;
     
     public TitlesSearch(boolean busqueda, String consulta){
         config();
         init();
         this.consulta = consulta;
+        System.out.println(busqueda+"¨*");
         this.busqueda = busqueda;
         screen.setVisible(true);
         screen.validate();
@@ -69,6 +70,8 @@ public class TitlesSearch {
         if(busqueda){
         screen.add(titleToSearch);
         screen.add(search);
+        }else{
+            System.out.println(busqueda+"...");
         }
         screen.add(searchButton);
       
